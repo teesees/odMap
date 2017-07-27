@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Down-Networks</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="js/leaflet/leaflet.ie.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="css/simple-styles.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <body>
+    <nav class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="columns-16">
+            <a href="http://down-networks.github.io" class="site-title">down-networks</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="main columns-16">
+          <h3>Seattle Police Department Overdose Responses</h3>
+          <div class="row">
+            <div class="columns-12">
+              <div id="map"></div>
+            </div>
+            <div class="columns-4">
+              <a class="twitter-timeline" href="https://twitter.com/PhraMedia" data-tweet-limit="2">Tweets by PhraMedia</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script-->
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              
+            </div>
+          </div><!-- /.row -->
+          <div class="row">
+            <div class="columns-16">
+              <hr>
+              <div class="row">
+                <div class="columns-5">
+                  <h4>About this heatmap:</h4>
+                  <p><strong>It</strong> provides up-to-date information on Police Department responses in the Seattle, WA area. The code for <a href="http://github.com/superbigtree/crime-seattle-io" target="blank">this project is available on Github</a>.</p>
+                  <p>Currently it shows the 10 most recent incident responses – future versions should include ways to browse the dispatches by time and location.</p>
+                  <p>The Police Dept. dispatch data is from <a href="http://data.seattle.gov">data.seattle.gov</a>. The <a href="https://data.seattle.gov/Public-Safety/Seattle-Police-Department-911-Incident-Response/3k2p-39jp">Seattle Police Department Overdose Responses</a> is refreshed on a 4-hour interval.</p>
+                </div>
+                <div class="columns-10 offset-1">
+                  
+                  <hr>
+                  <h4>More new projects on the way.</h4>
+                  <p>
+                  <hr>
+                  <h6>Disclaimer from data.seattle.gov:</h6>
+                  <p class="legal">The data made available here has been modified for use from its original source, which is the City of Seattle. Neither the City of Seattle nor the Office of the Chief Technology Officer (OCTO) makes any claims as to the completeness, timeliness, accuracy or content of any data contained in this application; makes any representation of any kind, including, but not limited to, warranty of the accuracy or fitness for a particular use; nor are any such warranties to be implied or inferred with respect to the information or data furnished herein. The data is subject to change as modifications and updates are complete. It is understood that the information contained in the web feed is being used at one's own risk.</p>
+                </div>
+              </div><!-- /.row -->
+            </div><!-- /.columns-16 -->
+          </div><!-- /.row -->
+        </div><!-- /.main -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="columns-16">
+            <p>down-networks 2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery-1.8.2.min.js"><\/script>')</script>
+    <script src="js/handlebars-1.0.rc.1.js"></script>
+    <script src="js/leaflet/leaflet.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>
